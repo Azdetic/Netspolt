@@ -9,19 +9,6 @@
 - **Multi-threading**: It uses Python's `threading` library to send packets from multiple threads at once, making the attack stronger.
 - **Proxy Support**: If you have a list of proxies, you can use them to make the DDOS attack more effective and hide your real IP.
 
-## Requirements
-
-Before running the script, make sure you have these Python libraries:
-
-- `scapy`
-- `threading` (this comes with Python, so you don't need to install it)
-
-To install `scapy`, use the following command:
-
-```bash
-pip install scapy
-```
-
 ## How It Works
 
 The script uses **scapy** to create packets and sends them to the target server. By using **multi-threading**, it sends packets from multiple threads at once, making the attack stronger.
