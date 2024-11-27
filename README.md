@@ -1,7 +1,4 @@
-Certainly! Here's a simplified version of the `README.md` using basic English:
-
 ---
-
 # Netspolt
 
 **Netspolt** is my first project for learning about DDOS attacks. It may not be perfect, but it’s a start. I plan to add more features and make it better over time.
